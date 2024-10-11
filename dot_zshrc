@@ -43,7 +43,6 @@ alias lta3="eza -lTag --level=3 --icons"
 
 # ---- Zoxide (better cd) ----
 eval "$(zoxide init zsh)"
-
 alias cd="z"
 
 # ---- Alias to Obsidian Vault ----

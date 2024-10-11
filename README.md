@@ -14,7 +14,7 @@
     - yazi
     - nvim
     - gh
-  - .Brewfile
+  - .Brewfile (needs to be templated)
   - .gitconfig (needs to be encrypted)
 
 - TO DOs
