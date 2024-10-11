@@ -1,15 +1,27 @@
 
 format = """
-[](fg:#3c3836)\
+[](fg:#a3aed2)\
 $os\
 $username\
+[](fg:#a3aed2)\
+[](fg:blue)\
 $directory\
+[](fg:blue)\
+[](fg:green)\
 $git_branch\
 $git_state\
-$gi_status\
+$git_status\
+[](fg:green)\
 $fill\
+[](fg:yellow)\
+$all(fg:black bg:yellow)\
+[](fg:yellow)\
+[](fg:purple)\
 $cmd_duration\
+[](fg:purple)\
+[](fg:white)\
 $time\
+[](fg:white)\
 $line_break\
 $character"""
 
@@ -23,10 +35,9 @@ $character"""
 # color_bg3
 # color_bg4
 
-
-
 [os]
 disabled = false
+style = "bg:#a3aed2 fg:#090c0c"
 
 [os.symbols]
 Android = " "
@@ -65,13 +76,15 @@ Windows = "󰍲 "
 
 [username]
 show_always = true
-format = '[$user]($style)'
+style_user = "bg:#a3aed2 fg:#090c0c"
+format = '[$user ]($style)'
 
 
 [directory]
 disabled = false
+style = "bg:blue fg:white bold"
 format = "[ $path ]($style)"
-truncation_length = 7
+truncation_length = 15
 truncation_symbol = "…/"
 truncate_to_repo = false
 # repo_root_style 
@@ -86,34 +99,35 @@ read_only = " 󰌾"
 
 [git_branch]
 symbol = " "
-style = "bg:#394260"
-format = '[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)'
+style = "bg:green fg:black"
+format = '[ $symbol $branch ]($style)'
 
 [git_state]
-style = "bg:#394260"
-format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
+style = "bg:green fg:black"
+format = '[($all_status$ahead_behind )]($style)'
 
 [git_status]
-style = "bg:#394260"
-format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
+style = "bg:green fg:black"
+format = '[($all_status$ahead_behind )]($style)'
 
 [fill]
 symbol = ""
 
 
 [cmd_duration]
-format = "[$duration]($style)"
+style = "fg:white bold bg:purple"
+format = "[ 󱦟 $duration ]($style)"
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
+style = "fg:black bold bg:white"
+format = '[  $time ]($style)'
 
 [character]
-success_symbol = "[](green)"
-error_symbol = "[](red)"
-vimcmd_symbol = "[](blue)"
-
+success_symbol = "[󰅂](green)"
+error_symbol = "[](red)"
+vimcmd_symbol = "[󰅁](blue)"
 
 [aws]
 symbol = "  "
@@ -192,12 +206,16 @@ symbol = " "
 
 [nodejs]
 symbol = " "
+style = "fg:black bg:yellow"
+format = '[ $symbol$version ]($style)'
 
 [ocaml]
 symbol = " "
 
 [package]
 symbol = "󰏗 "
+style = "fg:black bg:yellow"
+format = '[ $symbol$version ]($style)'
 
 [perl]
 symbol = " "
