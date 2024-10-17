@@ -17,6 +17,6 @@ require("lazy").setup({ { import = "jimi.plugins" }, { import = "jimi.plugins.ls
 		notify = false,
 	},
 	change_detection = {
-		notify = false,
+		notify = true,
 	},
 })
