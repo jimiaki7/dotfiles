@@ -5,7 +5,7 @@
 after-login-command = [
 'exec-and-forget open -n /Applications/Arc.app',
 'exec-and-forget open -n /Applications/WezTerm.app',
-'exec-and-forget borders active_color=0xff58cc57 inactive_color=0xff051718 width=5.0',
+'exec-and-forget borders active_color=0xff58cc57 width=7.0 blur_radius=10 inactive_color=0xff051718',
 ## 'exec-and-forget open -n /Applications/Accordance.app',
 ]
 
@@ -153,8 +153,8 @@ ctrl-left = 'workspace --wrap-around prev'
 ctrl-right = 'workspace --wrap-around next'
 
 # focus prev & next monitor!
-alt-n = 'focus-monitor --wrap-around prev'
-alt-e = 'focus-monitor --wrap-around next'
+alt-n = 'focus-monitor left'
+alt-e = 'focus-monitor right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
