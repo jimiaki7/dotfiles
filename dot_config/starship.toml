@@ -82,7 +82,7 @@ format = '[$user ]($style)'
 
 [directory]
 disabled = false
-style = "bg:blue fg:white bold"
+style = "bg:blue fg:black bold"
 format = "[ $path ]($style)"
 truncation_length = 15
 truncation_symbol = "…/"
