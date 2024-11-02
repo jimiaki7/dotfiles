@@ -12,6 +12,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "jimi.plugins" }, { import = "jimi.plugins.lsp" } }, {
+	ui = {
+		border = "rounded",
+	},
 	checker = {
 		enabled = true,
 		notify = false,
