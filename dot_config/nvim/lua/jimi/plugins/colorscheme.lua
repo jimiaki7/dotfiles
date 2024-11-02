@@ -5,7 +5,7 @@ return {
 		local transparent = true -- set to true if you would like to enable transparency
 		-- Customization
 		require("tokyonight").setup({
-			style = "storm",
+			style = "night",
 			transparent = transparent,
 			styles = {
 				sidebars = transparent and "transparent" or "dark",
