@@ -26,7 +26,6 @@ return {
 						},
 					},
 				},
-				border = true,
 			},
 			-- disable window_picker for
 			-- explorer to work well with
