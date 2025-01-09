@@ -276,7 +276,7 @@ alt-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
   if.app-id = 'jp.co.sbisec.HYPERSBI2'
-  run = 'layout floating'
+  run = ['layout floating', 'move-node-to-workspace 6']
 
 
 
