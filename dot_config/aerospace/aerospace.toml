@@ -273,10 +273,9 @@ alt-shift-l = ['join-with right', 'mode main']
 	if.app-id = 'com.devon-technologies.think3'
 	run = 'move-node-to-workspace 9'
 
-
-[[on-window-detected]]
-  if.app-id = 'jp.co.sbisec.HYPERSBI2'
-  run = ['layout floating', 'move-node-to-workspace 6']
+## [[on-window-detected]]
+##  if.app-id = 'jp.co.sbisec.HYPERSBI2'
+##  run = ['layout floating', 'move-node-to-workspace 6']
 
 
 
